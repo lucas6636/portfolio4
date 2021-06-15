@@ -1,0 +1,56 @@
+.footer{
+
+    margin:  30px auto;
+    width: 100%;
+    padding: 0 70px;
+    transition: all .3s;
+
+    @include mq("sp"){
+        padding: 0 20px;
+        margin-bottom: 120px;
+    }
+
+    &__meta{
+        padding-top: 30px;
+        width: 50%;
+        font-size: rem(12);
+        border-top: 1px solid #333;
+        transition: all .3s;
+
+        @include mq("sp"){
+            width: 100%;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+
+    &__items{
+        position: relative;
+    }
+
+    &__small{
+        margin-top: 30px;
+        position: relative;
+        transition: all .3s;
+
+        @include mq("sp"){
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+
+        }
+    }
+
+    &__logo{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%,-50%);
+
+        h1{
+            font-size: rem(20);
+            font-family: 'New Tegomin', serif;
+        }
+
+    }
+}

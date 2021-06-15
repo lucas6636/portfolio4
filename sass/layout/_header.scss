@@ -1,0 +1,70 @@
+.header{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 40px 60px;
+    margin: 0 auto;
+    transition: 0.5s;
+
+    &__contents{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        h1{
+            a{
+                color: #fff;
+                font-size: rem(18);
+                font-family: 'New Tegomin', serif;
+            }
+        }
+    }
+
+    &__nav{
+        @include mq("sp"){
+            display: none;
+        }
+        ul{
+            display: flex;
+
+            li{
+                margin-right: 30px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    color: #fff;
+                    font-size: rem(12);
+                }
+            }
+        }
+    }
+}
+
+.header.scroll-nav{
+    background: #fff;
+    padding: 20px 60px;
+
+    @include mq("sp"){
+        box-shadow: none;
+        padding: 40px 60px;
+        background: transparent;
+    }
+    h1{
+        a{
+            color: #333;
+        }
+    }
+    nav{
+        ul{
+            li{
+                a{
+                    color: #333;
+                }
+            }
+        }
+    }
+  }

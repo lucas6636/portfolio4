@@ -1,0 +1,90 @@
+.history{
+    margin: 250px 0;
+    background-image: url('../img/history.jpg');
+    background-attachment: fixed;
+    
+
+    &__text{
+        color: #fff;
+        display: flex;
+        padding: 100px 0;
+        h2{
+            writing-mode: vertical-rl;
+            font-size: rem(20);
+            transition: all .3s;
+
+            @include mq("tab"){
+                font-size: rem(19);
+            }
+            
+        }
+
+        p{
+            writing-mode: vertical-rl;
+            letter-spacing: 0.1em;
+            line-height: 290%;
+            height: 420px;
+            font-size: rem(13);
+            margin-right: 50px;
+            transition: all .3s;
+            border-right: 1px solid #fff;
+            background: linear-gradient(to left, #fff 1px, transparent 1px) transparent;
+            background-size: 2.9em auto;
+            background-position: 1px top;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            @include mq("tab"){
+                font-size: rem(12);
+                margin-right: 30px;
+                
+            }
+
+            @include mq("sp"){
+                height: 240px;
+            }
+        }
+    }
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link{
+        position: relative;
+
+        a{
+            font-size: rem(13);
+            border-right: 1px solid #fff;
+
+            @include mq("sp"){
+                font-size: rem(10);
+            }
+        }
+
+        &::before{
+            position: absolute;
+            content: "";
+            width: 12px;
+            left: 7px;
+            top: -16px;
+            height: 2px;
+            background: #fff;
+            transform: rotate(135deg);
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            left: 10px;
+            top: -20px;
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+        }
+    }
+}
