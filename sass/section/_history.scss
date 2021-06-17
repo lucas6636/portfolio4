@@ -8,6 +8,10 @@
         color: #fff;
         display: flex;
         padding: 100px 0;
+
+        @include mq("sp"){
+            justify-content: center;
+        }
         h2{
             writing-mode: vertical-rl;
             font-size: rem(20);
@@ -41,7 +45,7 @@
             }
 
             @include mq("sp"){
-                height: 240px;
+                height: 290px;
             }
         }
     }

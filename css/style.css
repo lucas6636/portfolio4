@@ -518,6 +518,16 @@ template, [hidden] {
   width: 50%;
 }
 
+.footer__title {
+  margin-bottom: 30px;
+}
+
+.footer__title a {
+  font-family: 'New Tegomin', serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
 .footer__items {
   position: relative;
 }
@@ -527,19 +537,6 @@ template, [hidden] {
   position: relative;
   -webkit-transition: all .3s;
   transition: all .3s;
-}
-
-.footer__logo {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.footer__logo h1 {
-  font-family: 'New Tegomin', serif;
-  font-size: 1.25rem;
 }
 
 .header {
@@ -655,7 +652,7 @@ template, [hidden] {
   height: 420px;
   letter-spacing: 0.1em;
   line-height: 290%;
-  margin-right: 50px;
+  margin-right: 30px;
   padding-bottom: 15px;
   padding-top: 15px;
   -webkit-transition: all .3s;
@@ -721,6 +718,10 @@ template, [hidden] {
           justify-content: center;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+.access__info {
+  width: 100%;
 }
 
 .access__title {
@@ -1217,6 +1218,9 @@ template, [hidden] {
 
 @media screen and (max-width: 767px) {
   /* sp-size */
+  .inner {
+    padding: 0;
+  }
   .openbtn {
     display: block;
   }
@@ -1231,6 +1235,7 @@ template, [hidden] {
   .footer__meta {
     padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
     width: 100%;
   }
   .footer__small {
@@ -1255,29 +1260,41 @@ template, [hidden] {
             flex-direction: column-reverse;
   }
   .about__img {
-    margin: 0 auto;
-    width: 80%;
+    text-align: center;
+    width: 100%;
   }
   .about__text {
-    margin: 0 auto 50px auto;
+    margin: 0 0 50px auto;
   }
   .about__text p {
-    height: 300px;
+    height: 410px;
   }
   .about__link a {
     font-size: 0.625rem;
   }
+  .access__contents {
+    padding: 0 20px;
+  }
   .access__local h3 {
+    letter-spacing: 1em;
     width: 49px;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
   }
   .access__hour h3 {
+    letter-spacing: 1em;
     width: 49px;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
   }
   .gallery__text {
-    margin: 0 auto 50px auto;
+    margin: 0 auto 50px 0;
   }
   .gallery__text p {
-    height: 300px;
+    height: 350px;
+    margin-right: 30px;
   }
   .gallery__link a {
     font-size: 0.625rem;
@@ -1296,11 +1313,19 @@ template, [hidden] {
     left: 10px;
     top: 10px;
   }
+  .history__text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .history__text p {
-    height: 240px;
+    height: 290px;
   }
   .history__link a {
     font-size: 0.625rem;
+  }
+  .news__item {
+    width: 100%;
   }
   .news__link a {
     font-size: 0.625rem;

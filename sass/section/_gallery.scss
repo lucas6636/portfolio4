@@ -18,7 +18,7 @@
         margin: 0 auto;
 
         @include mq("sp"){
-            margin: 0 auto 50px auto;
+            margin: 0 auto 50px 0;
         }
 
         p{
@@ -42,7 +42,8 @@
             }
 
             @include mq("sp"){
-                height: 300px;
+                height: 350px;
+                margin-right: 30px;
             }
         }
 

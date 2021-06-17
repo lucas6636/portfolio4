@@ -10,6 +10,14 @@
         @include mq("tab"){
             flex-direction: column-reverse;
         }
+
+        @include mq("sp"){
+            padding: 0 20px;
+        }
+    }
+
+    &__info{
+        width: 100%;
     }
 
     &__title{
@@ -47,6 +55,8 @@
             font-size: rem(12);
             @include mq("sp"){
                 width: 49px;
+                letter-spacing: 1em;
+                writing-mode: vertical-lr;
             }
         }
     }
@@ -75,6 +85,8 @@
 
             @include mq("sp"){
                 width: 49px;
+                letter-spacing: 1em;
+                writing-mode: vertical-lr;
             }
         }
     }

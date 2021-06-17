@@ -1,13 +1,14 @@
+//*ハンバーガーメニュー
 $(".openbtn").click(function () {
     $(this).toggleClass('active');
       $(".g-nav").toggleClass('panelactive');
   });
-
   $(".g-nav a").click(function () {
     $(".openbtn").removeClass('active');
     $(".g-nav").removeClass('panelactive');
 });
 
+//*メニュー 一定以上で隠れる
 $(function(){
   window.addEventListener("scroll", function () {
          var header = document.querySelector("header");
@@ -15,7 +16,7 @@ $(function(){
  });
 });
 
-
+//*slick 下のサブメニュー
   $('.gallery__thumb').slick({
       arrows:false,
       infinite: true,
