@@ -711,8 +711,6 @@ template, [hidden] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -721,7 +719,7 @@ template, [hidden] {
 }
 
 .access__info {
-  width: 100%;
+  width: 50%;
 }
 
 .access__title {
@@ -1174,6 +1172,9 @@ template, [hidden] {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .access__info {
+    width: 100%;
+  }
   .access__title {
     width: 100%;
   }
@@ -1295,6 +1296,12 @@ template, [hidden] {
   .gallery__text p {
     height: 350px;
     margin-right: 30px;
+  }
+  .gallery__slide {
+    width: 100%;
+  }
+  .gallery__img {
+    width: 100%;
   }
   .gallery__link a {
     font-size: 0.625rem;
