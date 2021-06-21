@@ -911,7 +911,7 @@ template, [hidden] {
   background-image: url("../img/hero1.jpg");
   background-position: center center;
   background-size: cover;
-  height: 660px;
+  height: 100vh;
   position: relative;
 }
 
@@ -1291,7 +1291,7 @@ template, [hidden] {
             writing-mode: vertical-lr;
   }
   .gallery__text {
-    margin: 0 auto 50px 0;
+    margin: 0 0 50px auto;
   }
   .gallery__text p {
     height: 350px;
